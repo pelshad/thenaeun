@@ -1,0 +1,97 @@
+.child_info .wrap .child_scope {
+    color: #FCB87A;
+    padding-left: 35px;
+    margin: 40px 0;
+    font-size: 24px;
+}
+
+.process {
+    margin-top: 80px;
+}
+
+.process .wrap .grid_box_child_pc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.process .wrap .grid_box_child_pc .img_card{
+    width: 90%;
+}   
+
+.process .wrap .grid_box_child_pc .arr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process .wrap .grid_box_child_pc div:nth-child(2n) {
+}
+
+.process .wrap .grid_box_child_mobile{
+    display: none;
+}
+.child_info .wrap .check .when {
+    width: 100%;
+}
+
+.child_info .wrap .check .when div {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.child_info .wrap .check .when span {
+    vertical-align: baseline;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.child_info .wrap .check .when img {
+    white-space: nowrap;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    
+}
+@media only screen and (min-width:100px) and (max-width:1000px) {
+    .process .wrap .grid_box_child_pc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 80px;
+    }
+    .arr{
+        display: none !important;
+    }
+    .process .wrap .grid_box_child_mobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:850px) {
+    .process .wrap .grid_box_child_mobile {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 80px;
+        place-items: center;
+    }
+    .process .wrap .grid_box_child_mobile div {
+        margin-bottom: 10px;
+    }
+    .process .wrap .grid_box_child_pc {
+    display: none;
+    }
+    
+    .arr{
+        display: none !important;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .process .wrap .grid_box_child_mobile img{
+        width: 100%;
+    }
+    .child_info .wrap .child_scope img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,261 @@
+.banner_intro{
+    height: 300px;
+    background-image: url('assets/images/intro/subBG_01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover
+}
+
+.banner_intro .wrap .check_location{
+    text-align: end;
+    padding-top: 35px;
+}
+.banner_intro .wrap .check_location p{
+    display: inline-block;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #878787;
+}
+.banner_intro .wrap .check_location p:nth-child(2){
+    padding: 0px 10.5px;
+}
+.banner_intro .wrap .title{
+    text-align: center;
+    line-height: 200px;
+}
+.banner_intro .wrap .title h1{
+    font-size: 38px;
+    color: white;
+    font-weight: 500;
+}
+
+.doctor_info{
+    margin-top: 70px;
+}
+.doctor_info ul li {
+    display: inline-block;
+    width: 50%;
+}
+.doctor_info ul li .doctor_img{
+    text-align: end;
+    padding-right: 50px;
+}
+.doctor_info li .greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.doctor_info li .greetings div{
+    font-family: 'NanumBarunGothic';
+    line-height: 1.7;
+    width: 100%;
+    padding-bottom: 60px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.doctor_info li .greetings div span{
+    font-size: 32px;
+    font-weight: bolder;
+    vertical-align: baseline;
+}
+
+.career{
+    margin: 0 105px 70px 105px;
+}
+.career .career_title{
+    text-align: center;
+    background-color: #FFECB1;
+    border-top: 3px solid #FDCB2B;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.career .career_list{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAEA;
+}
+.career .career_list ul {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.career .career_list ul{
+    margin: 0 70px;
+}
+
+.career .career_list ul li{
+    font-size: 16px;
+    font-weight: lighter;
+    
+}
+.career .career_list ul li:not(nth-last-child){
+    padding-bottom: 15px;
+}
+
+
+.time{
+    margin: 0 105px 70px 105px;
+}
+.time .time_title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.time .time_table ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px 0;
+}
+.time .time_table ul:nth-child(1){
+    border-top: 3px solid #FFC001;
+    border-bottom: 1.5px solid #FFEBAD;
+    background-color: #FFFAEA;
+}
+.time .time_table ul:nth-child(1) li{
+    font-weight: bold;
+}
+.time .time_table ul{
+    border-bottom: 1.5px solid #FFEBAD;
+}
+
+.time .time_table ul li{
+    font-weight: 500;
+    list-style: none;
+    font-size: 16px;
+}
+.time .time_table ul:not(:nth-child(1)) li:not(:nth-child(1)){
+    color:#FD7B00;
+    font-weight: 700;
+}
+
+.time .annotaion{
+    margin-top: 15px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    .banner_intro .wrap .check_location{
+        text-align: center;
+        padding-top: 35px;
+        padding-right: 20px;
+    }
+
+    
+
+}
+@media only screen and (min-width:100px) and (max-width:1000px) {
+    .career .career_list ul{
+        margin: 0 30px;
+    }
+    
+}
+@media only screen and (min-width:100px) and (max-width:850px) {
+    /**/
+    .career{
+        margin: 0px;
+    }
+    .career .career_list{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFFAEA;
+    }
+    .career .career_list ul {
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+    
+    .career .career_list ul li:not(nth-last-child){
+        padding-bottom: 10px;
+    }
+
+    .time{
+        margin: 30px 0px 30px 0px;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .doctor_info li .greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    }
+    .doctor_info .greetings img{
+        width: 18px;
+    }
+    .doctor_info .doctor_img img{
+        width: 100%;
+    }
+    .doctor_info li .greetings div{
+        padding-bottom: 30px;
+        font-size: 1.2em;
+    }
+    .doctor_info li .greetings div span{
+        font-size: 1.4em;
+        font-weight: 700;
+        vertical-align: baseline;
+    }
+    
+    
+
+    /**/
+    .career .career_list{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFFAEA;
+    }
+    .career .career_list ul {
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .career .career_list ul{
+        display: flex;
+    }
+    
+    .career .career_list ul li{
+        font-size: 14px;
+        
+    }
+    .career .career_list ul li:not(nth-last-child){
+        padding-bottom: 10px;
+    }
+
+    
+}
+
+@media only screen and (min-width:100px) and (max-width:400px) {
+    .doctor_info li .greetings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        }
+        .doctor_info .greetings img{
+            width: 18px;
+        }
+        .doctor_info li .greetings div{
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+        .doctor_info li .greetings div span{
+            font-size: 16px;
+            font-weight: 700;
+            vertical-align: baseline;
+        }
+}

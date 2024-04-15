@@ -1,0 +1,91 @@
+.sap {
+    margin-bottom: 70px;
+}
+
+.sap .sap_table {
+    border: 0.5px solid #E9CC85;
+    margin-top: 30px;
+
+}
+
+.sap .sap_table ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: center;
+
+}
+
+.sap .sap_table ul li {
+    border: 1.5px solid #E9CC85;
+    font-size: 16px;
+}
+
+.sap .sap_table ul li b {
+    font-size: 18px;
+}
+
+.sap .sap_table ul li:first-child {
+    padding: 20px;
+    background-color: #FEF0D1;
+    font-size: 16px;
+}
+
+.sap .sap_table ul:nth-child(1) {
+    background-color: #FEF0D1;
+    align-items: center;
+}
+
+.sap .sap_table ul:first-child li:last-child {
+    padding: 20px;
+}
+
+.sap .sap_table ul li {
+    font-weight: 500;
+    list-style: none;
+}
+
+.sap .sap_table ul:not(:nth-child(1)) li:not(:nth-child(1)) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    .sap .sap_table {
+        padding: 0 10px;
+        border: 0px;
+    }
+
+    .sap .sap_table ul {
+        grid-template-columns: 1fr 4fr;
+
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:650px) {
+
+
+    .sap .sap_table ul {
+        grid-template-columns: 1fr 3fr;
+
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:550px) {
+
+
+    .sap .sap_table ul {
+        grid-template-columns: 1fr 2fr;
+
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:400px) {
+
+
+    .sap .sap_table ul {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}

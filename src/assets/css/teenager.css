@@ -1,0 +1,100 @@
+.teenager_info .wrap .check div{
+    font-size: 16px;
+}
+
+.needs .grid_box{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.needs .grid_box div{
+    text-align: center;
+    width: 220px;
+}
+
+.needs .grid_box div span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.needs {
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+:is(.a.active, .b.active, .c.active, .d.active, .e.active){
+  animation: bubble 1s ease;
+  animation-fill-mode: forwards;
+}
+.a.active{
+    animation-delay: 0.5s;
+}
+.b.active{
+    animation-delay: 1s;
+}
+.c.active{
+    animation-delay: 1.5s;
+}
+.d.active{
+    animation-delay: 2s;
+}
+.e.active{
+    animation-delay: 2.5s;
+}
+
+@keyframes bubble {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+.active{
+    opacity: 0;
+}
+.static{
+    opacity: 0;
+}
+
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    
+}
+@media only screen and (min-width:100px) and (max-width:1000px) {
+    .needs .grid_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .needs .grid_box div{
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:800px) {
+    
+}
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .needs .grid_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .needs .grid_box div{
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:400px) {
+    .needs .grid_box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .needs .grid_box div{
+        width: 100%;
+        margin: 20px auto;
+    }
+}

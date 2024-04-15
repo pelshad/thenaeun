@@ -1,0 +1,394 @@
+html .main_swiper{
+    font-family: 'Noto Sans KR', sans-serif !important;
+  }
+
+.main_swiper {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-slide .wrap {}
+
+.swiper-slide .swipAbsolute1,
+.swipAbsolute2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    display: inline-block;
+}
+
+.swipAbsolute1 .wrap div:nth-child(1) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+.swipAbsolute1 .wrap div:nth-child(1) p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.swipAbsolute1 .wrap div:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.swipAbsolute1 .wrap div:nth-child(2) p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #FF7E00;
+    vertical-align: baseline;
+}
+
+.swipAbsolute2 .wrap div:nth-child(1) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.swipAbsolute2 .wrap div:nth-child(1) p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.swipAbsolute2 .wrap div:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.swipAbsolute2 .wrap div:nth-child(3) p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #30971F;
+    vertical-align: baseline;
+}
+
+.swipAbsolute2 .wrap div:nth-child(3) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.main_side {
+    margin-bottom: 10px;
+}
+
+.main_side .wrap .flex_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    position: relative;
+    top: -40px;
+    z-index: 11;
+}
+
+.main_side .wrap .flex_box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    height: 80px;
+    box-shadow: 3px 3px 5px rgb(212, 212, 212);
+}
+
+.main_side .wrap .flex_box div:hover {
+    box-shadow: 0 0 10px #ffca8a;
+}
+
+.main_side .wrap .flex_box div img {
+    padding: 0 10px;
+}
+
+.main_side .wrap .flex_box div p {
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    .pcimg {
+        display: none;
+    }
+
+    .moimg {
+        display: block;
+    }
+
+    .swiper-slide img {
+        height: 60%;
+    }
+
+    .nav_hide {
+        display: none !important;
+    }
+
+    .swiper-slide .swipAbsolute1,
+    .swipAbsolute2 {
+        position: absolute;
+        top: 40%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(1) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(1) p {
+        font-size: 30px;
+        font-weight: bold;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(2) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(2) p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #FF7E00;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(1) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(1) p {
+        font-size: 30px;
+        font-weight: bold;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(2) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(3) p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #30971F;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(3) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .main_side .wrap .flex_box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        height: 60px;
+        box-shadow: 3px 3px 5px rgb(212, 212, 212);
+    }
+
+    .main_side .wrap .flex_box div img {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    .main_side .wrap .flex_box div p {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+
+    .main_side .wrap .flex_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        position: relative;
+        top:-30px;
+        z-index: 11;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .swiper-slide img {
+        height: 200px;
+    }
+
+    .nav_hide {
+        display: none !important;
+    }
+
+    .swiper-slide .swipAbsolute1 {
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .swiper-slide .swipAbsolute2 {
+        width: 350px;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(1) {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(1) p {
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(2) {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .swipAbsolute1 .wrap div:nth-child(2) p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #FF7E00;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(1) {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(1) p {
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(2) {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(3) p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #30971F;
+        vertical-align: baseline;
+    }
+
+    .swipAbsolute2 .wrap div:nth-child(3) {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .main_side .wrap .flex_box div img {
+        height: 30px;
+        padding: 0 10px;
+    }
+
+    .main_side .wrap .flex_box div p {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .main_side .wrap .flex_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        position: relative;
+        top: -20px;
+        z-index: 11;
+    }
+    .main_side .wrap .flex_box div{
+        width: 100%;
+    }
+
+    .pcimg {
+        display: none;
+    }
+
+    .moimg {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .main_side .wrap .flex_box div p {
+        font-size: 17px;
+    }
+    .main_side .wrap .flex_box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        height: 40px;
+        box-shadow: 3px 3px 5px rgb(212, 212, 212);
+    }
+}
+
+html * {
+    font-family: 'NanumBarunGothic' , sans-serif;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothicBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothicLight';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}

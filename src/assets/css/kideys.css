@@ -1,0 +1,105 @@
+.kideys .kideys_table {
+    border: 0.5px solid #E9CC85;
+    margin-top: 30px;
+}
+
+.kideys .kideys_table ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.kideys .kideys_table ul li {
+    border: 1.5px solid #E9CC85;
+}
+
+.kideys .kideys_table ul li:first-child {
+    padding: 20px;
+    background-color: #FEF0D1;
+    display: flex;
+    justify-content: center;
+}
+
+.kideys .kideys_table ul li b {
+    font-size: 18px;
+}
+
+.kideys .kideys_table ul {}
+
+.kideys .kideys_table ul li {
+    font-weight: 500;
+    list-style: none;
+    font-size: 16px;
+}
+
+.kideys .kideys_table ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    font-family: 'NanumBarunGothic';
+}
+
+.check div div {
+    line-height: 1.3;
+}
+
+.kideys_list {
+    margin-top: 30px;
+    padding-bottom: 115px;
+}
+
+.kideys_list ul {
+    margin-left: 21px;
+    padding-left: 10px;
+}
+
+.kideys_list ul li {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: lighter;
+}
+
+
+
+.kideys_list ul li::marker {
+    font-size: 12px;
+    color: #FF9200;
+
+}
+
+
+@media only screen and (min-width:100px) and (max-width:800px) {
+
+    .kideys .kideys_table ul li {
+        padding: 0 10px;
+    }
+
+    .kideys_list ul li {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .kideys .kideys_table ul:not(:nth-child(1)) li:not(:nth-child(1)) {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .kideys .kideys_table {
+        border: 0px;
+        padding: 0 10px;
+    }
+
+    #root>div>div.wrap>div.diag>div {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .banner_container .wrap .check_location {
+        text-align: center;
+        padding-top: 35px;
+    }
+}

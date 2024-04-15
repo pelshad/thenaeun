@@ -1,0 +1,32 @@
+.vaccination_list{
+    margin-top: 30px;
+}
+
+.vaccination_list .wrap .img_grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap:20px;
+    margin-bottom: 60px;
+}
+
+.vaccination_list .wrap .img_grid div{
+    margin: 10px auto 0 auto;
+}
+
+@media only screen and (min-width:100px) and (max-width:800px) {
+    .vaccination_list .wrap .img_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:10px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .vaccination_list .wrap .img_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .vaccination_list .wrap .img_grid img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,166 @@
+.dig_process .wrap .list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.dig_process .wrap .list div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dig_process .wrap .list div p{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.dig_process .wrap .list:nth-child(1) {
+    margin-top: 60px;
+}
+
+.img_name {
+    padding: 15px 39px 60px 53px;
+    font-weight: 500;
+}
+
+.img_name div {
+    font-size: 16px;
+}
+
+.img_name div:not(:first-child) {}
+
+
+
+.process .wrap .grid_box:last-child {}
+
+.process .wrap .grid_box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.process .wrap .grid_box2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.process .wrap .grid_box div:nth-child(2n) {
+    padding-left: 10px;
+}
+
+.wrap .check_digestion div {
+    display: flex;
+}
+
+.wrap .check_digestion div div {
+    font-size: 18px;
+}
+
+.dig_list {
+    padding-bottom: 115px;
+}
+
+.dig_list ul {
+    margin-left: 21px;
+    padding-left: 10px;
+}
+
+.dig_list ul li {
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'NanumBarunGothic';
+    font-weight: lighter;
+}
+
+.dig_list ul li::marker {
+    font-size: 12px;
+    color: #FF9200;
+}
+
+
+.pc2 {
+    display: block;
+}
+
+.mobile2 {
+    display: none;
+}
+
+.wrap .check_obey {
+    padding: 20px 30px;
+    font-size: 16px;
+    list-style: url("assets/images/clinic/icon_04.png");
+
+  }
+  
+  .wrap .check_obey li {
+    font-family: 'NanumBarunGothic';
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+
+    .check_digestion,
+    .kideys_list {
+        padding: 0 20px;
+    }
+
+}
+
+@media only screen and (min-width:100px) and (max-width:800px) {
+    .pc2 img {
+        width: 90%;
+    }
+
+    .img_name {
+        padding: 15px 39px 65px 34px;
+        font-weight: 500;
+    }
+
+    .wrap .check_digestion div div {
+        font-size: 18px;
+        padding: 0px 10px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .pc2 {
+        display: none;
+    }
+
+    .mobile2 {
+        display: block;
+    }
+
+    .mobile2 .list div div {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+        letter-spacing: 5px;
+    }
+
+    .mobile2 .list div img {
+        width: 150px;
+    }
+
+    .mobile2 .list {
+        padding: 0 10px;
+    }
+
+    .process .wrap .list {
+        justify-content: space-evenly;
+    }
+
+    .check_digestion {
+        padding: 20px 20px;
+    }
+}

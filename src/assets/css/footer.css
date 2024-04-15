@@ -1,0 +1,49 @@
+footer{
+    background: #F8F8F8;
+}
+.footerflex{
+    justify-content: center;
+    align-items: cneter;
+    padding: 60px;
+}
+.footerflex div{
+    text-align: center;
+}
+
+.footerflex .logo{
+    padding-bottom: 25px;
+}
+
+.footerflex .info{
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #565656;
+}
+
+.footerflex > .info > span{
+    color: #549949;
+    font-size: 14px;
+    line-height: 1.6;
+    cursor: auto;
+    font-weight: bold;
+}
+
+.footerflex .copy{
+    color: #C2C2C2;
+    font-size: 14px;
+}
+
+.info_pc{
+    display: block;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    .footerflex{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}

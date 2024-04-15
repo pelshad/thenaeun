@@ -1,0 +1,161 @@
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    height: 85px;
+}
+
+header .pc {
+    height: 100%;
+}
+
+header h1{
+    position: relative;
+    left: -24px;
+    cursor: pointer;
+}
+
+header .flexBox .pc ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .pc ul li,
+ol li {
+    display: inline-block;
+}
+
+header .pc ul>li {
+    position: relative;
+    margin-left: 20px;
+    padding: 0 15px;
+}
+
+header .pc ul>li>a,
+header .pc ul>li>span,
+header .pc ul>li>span a {
+    line-height: 85px;
+    font-size: 18px;
+    font-weight: 450;
+    font-family: 'NanumBarunGothic';
+    font-weight: bold;
+}
+
+header .pc ul {
+    font-family: 'NanumBarunGothic';
+    font-weight: bold;
+}
+
+header .pc ul>li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 4px;
+    margin: 5px 0 0;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
+    background-color: #FFC000;
+    z-index: 12;
+}
+header .pc ul>li:hover:after{
+    width: 100%;
+    opacity: 1;
+}
+
+header .pc ul>li>ol {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #00000055;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 11;
+}
+
+header .pc ul>li:hover>ol {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+header .pc ul>li>ol>li {
+    display: block;
+    padding-top: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+header .pc ul>li>ol>li>a {
+    font-family: 'NanumBarunGothic';
+    font-weight: bold;
+}
+header .pc ul>li>ol>li:nth-last-child(1) {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+header .pc ul>li>ol>li:hover a {
+    color: #FFC001;
+    position: relative;
+}
+
+header .pc ul>li>ol>li:hover a::before {
+    color: #FFC001;
+    content: "• ";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    transform: translateY(-50%);
+}
+.mobilelg{
+    display: none;
+  }
+.mobilesm{
+    display: none;
+}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+    header h1{
+        position: relative;
+        left: 0;
+    }
+
+  }
+
+  @media only screen and (min-width:100px) and (max-width:1000px) {
+    .mobilelg{
+        display: inherit;
+      }  
+  }
+
+  @media only screen and (min-width:100px) and (max-width:600px) {
+
+    .mobilelg{
+        display: none;
+      }  
+    .mobilesm{
+        display: inherit;
+    }
+
+    .pcimg {
+      display: none;
+    }
+  
+    .moimg {
+      display: block;
+    }
+  }
+  

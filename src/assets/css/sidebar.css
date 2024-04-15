@@ -1,0 +1,13 @@
+.side_title{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.on{
+    display: flex;
+    flex-direction: column;
+}
+.on > li{
+    padding-top: 20px;
+}

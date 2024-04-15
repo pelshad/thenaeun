@@ -1,0 +1,107 @@
+.banner_come {
+    height: 300px;
+    background-image: url('assets/images/come/subBG_04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover
+}
+
+.banner_come .wrap .check_location {
+    text-align: end;
+    padding-top: 35px;
+}
+
+.banner_come .wrap .check_location p {
+    display: inline-block;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.banner_come .wrap .check_location p:nth-child(2) {
+    padding: 0px 10.5px;
+}
+
+.banner_come .wrap .title {
+    text-align: center;
+    line-height: 200px;
+}
+
+.banner_come .wrap .title h1 {
+    font-size: 38px;
+    color: white;
+    font-weight: 500;
+}
+
+.bottom span b {
+    font-size: 18px;
+}
+
+
+
+
+.container div span {
+    font-size: 17px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.container div span img {
+    width: 224px;
+}
+
+.container .blank {
+    padding: 35px 20px;
+}
+
+.container .bottom :nth-child(2) {
+    border-right: 2px solid rgba(211, 211, 211, 0.562);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 63px 0;
+}
+
+span b {
+    padding-right: 10px;
+}
+
+.bottom span c {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media(max-width:1200px) {
+    .banner_come .wrap .check_location {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:1000px) {
+    .bottom {
+        flex-direction: column;
+    }
+
+    .blank {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+    .banner_come .wrap .check_location {
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .bottom {
+        text-align: center;
+    }
+
+    .bottom span c {
+        display: block;
+    }
+}

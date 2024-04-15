@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1;
+  outline: 0px;
+  /*outline: 1px solid black;*/
+}
+
+body {
+  /* text-align: center; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  /* display: inline-block; */
+  margin: 0px auto;
+  width: 1200px;
+}
+
+
+.mobile {
+  display: none !important;
+}
+
+.pcimg {}
+
+.moimg {
+  display: none;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 85px;
+}
+
+div {
+  word-break: keep-all;
+}
+
+span {}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="image"],
+input[type="tel"],
+input[type="submit"],
+button,
+select,
+textarea {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+.left_title {
+  display: flex;
+  align-items: center;
+}
+.title_font{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0;
+}
+
+.title_bar {
+  display: inline-block;
+  height: 35px;
+  width: 5px;
+  border-radius: 5px;
+  background-color: #FF7E00;
+  margin-right: 10px;
+}
+
+/*check 공용*/
+
+/* .wrap .check {
+  margin-bottom: 60px;
+} */
+
+.wrap .check {
+  
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 0px 30px;
+  font-weight: 430;
+  line-height: 1.;
+  font-size: 16px;
+  list-style: url("assets/images/clinic/icon_04.png");
+}
+
+.wrap .check li {
+  font-weight: lighter;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.wrap .check ul p {
+  display: none;
+}
+
+@media only screen and (min-width:100px) and (max-width:1300px) {}
+
+@media only screen and (min-width:100px) and (max-width:1200px) {
+
+  .wrap {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+
+
+
+}
+
+@media only screen and (min-width:100px) and (max-width:1000px) {
+  
+  .pc {
+    display: none !important;
+  }
+
+  .info.pc{
+    display: none;
+}
+
+  .mobile {
+    display: inherit !important;
+  }
+
+
+  .wrap .check ul {}
+
+  .wrap .check li {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:100px) and (max-width:800px) {}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+  .pcimg {
+    display: none;
+  }
+
+  .moimg {
+    display: block;
+  }
+
+  .br {
+    display: none;
+  }
+}
+
+html * {
+  font-family: 'NanumBarunGothicBold', sans-serif;
+}

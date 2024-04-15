@@ -1,0 +1,155 @@
+.banner_container {
+    margin-bottom: 55px;
+}
+
+.banner_container .wrap .check_location {
+    text-align: end;
+    padding-top: 35px;
+}
+
+.banner_container .wrap .check_location p {
+    display: inline-block;
+    font-size: 13.5px;
+    color: #727272;
+}
+
+.banner_container .wrap .check_location p:last-child {
+    color: #575757;
+    font-weight: bolder;
+}
+
+.banner_container .wrap .check_location p:nth-child(2n) {
+    padding: 0px 10.5px;
+}
+
+.banner_container .wrap .title {
+    text-align: center;
+    line-height: 200px;
+}
+
+.banner_container .wrap .title h1 {
+    font-size: 38px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.head_banner.clinic {
+    height: 300px;
+}
+
+.head_banner.clinic .banner_img img {
+    object-fit: cover;
+    height: 300px;
+    aspect-ratio: auto 16 / 9;
+}
+
+.head_banner {
+    position: relative;
+}
+
+
+.head_banner .wrap {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+}
+
+.head_banner.clinic {
+    height: 300px;
+    background-image: url('assets/images/header/subBG_02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.head_banner.diagnosis {
+    height: 300px;
+    background-image: url('assets/images/header/subBG_03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.diagnosis {
+    height: 300px;
+    background-image: url('assets/images/digestion/subBG_03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover
+}
+
+.come {
+    height: 300px;
+    background-image: url('assets/images/come/subBG_04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover
+}
+
+.head_banner .warp {
+    position: relative;
+}
+
+.side_nav.clinic {
+    height: 60px;
+    display: grid;
+    width: inherit;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: -30px;
+}
+
+.side_nav.diagnosis {
+    height: 60px;
+    display: grid;
+    width: inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: -30px;
+}
+
+.side_nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(212, 212, 212);
+    height: 60px;
+    border-left: 0.5px solid rgb(236, 236, 236);
+}
+
+.side_nav div span {
+    font-size: 18px;
+    font-family: 'NanumBarunGothic';
+    font-weight: bold;
+}
+
+.side_nav .light_on {
+    background-color: #FFE9B0;
+}
+
+.diagnosis .wrap .check_location {
+    display: block;
+}
+
+@media only screen and (min-width:100px) and (max-width:1000px) {
+    .side_nav div span {
+
+        word-break: keep-all;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .side_nav div span {
+        word-break: keep-all;
+        text-align: center;
+        font-size: 14px;
+    }
+}
